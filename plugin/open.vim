@@ -19,7 +19,7 @@ fun! s:get_extension_list()
     return keys
 endf
 
-echo s:get_extension_list()
+" echo s:get_extension_list()
 
 fun! s:select_app( applist )
     for e in a:applist 

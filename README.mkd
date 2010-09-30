@@ -16,4 +16,8 @@ detecting file extensions.
     cal Open( 'https://gmail.com' )
     cal Open( 'http://twitter.com' )
 
+    cal OpenSetPrefer(extensionPattern,app)
+
+    cal OpenRegisterExt(extensionPattern,applist) 
+
 ### Author: Cornelius (Yo-An Lin)
