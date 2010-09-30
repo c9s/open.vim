@@ -1,12 +1,14 @@
 
 # Open.vim
 
-`autoload/open.vim` provides an interface for launching application by
+`open.vim` provides an interface for launching application by
 detecting file extensions.
 
 
 ## Install
 
     make install
+
+## Usage
 
 ### Author: Cornelius (Yo-An Lin)
