@@ -39,7 +39,7 @@ fun! Open(uri)
   for pattern in s:get_extension_list()
     if pattern =~ '^:' 
       let proto_pattern = strpart( pattern , 1 )
-      if a:uri =~ '^' . proto_pattern . '://'
+      if a:uri =~ '^\v' . proto_pattern . '://'
         let app = s:select_app( s:get_applist( pattern ) )
       endif
     elseif a:uri =~ '\.\v(' . pattern . ')$' 
@@ -58,6 +58,7 @@ fun! Open(uri)
 endf
 
 " cal Open( '/home/c9s/1121.bmp' )
+" cal Open( 'http://google.com/' )
 
 
 " ===============================
